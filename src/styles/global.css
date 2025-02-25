@@ -82,6 +82,19 @@ nav a {
     color: #000;
     padding: 5px 10px;
 }
+.active {
+  background: #FB8500;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  
+}
+.active:hover{
+  background: #FB8500;
+  color: #fff;
+}
+
 nav a:hover {
   background: #023047;
   color: #fff;
@@ -429,33 +442,11 @@ li > Link {
     color: gold;
 }
 
-/*
-p{
-    margin: 16px auto;
-    line-height: 1.5em;
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 14px;
+    margin-left: 32px; 
+    color: #000;
+    
 }
-
-
-
-
-
-
-
-
-li > svg {
-    width: 30px;
 }
-li > svg:hover {
-    fill: gold;
-    cursor: pointer;
-}
-
-li > a{
-    text-decoration: none;
-    font-family: "Source Code Pro";
-}
-li > a:hover {
-    color: gold;
-    cursor: pointer;
-}
- */

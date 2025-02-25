@@ -64,8 +64,8 @@
     font-size: 18px;
     font-weight: 600;
     margin-top: 90px;
-    /* border: solid 1px; */
-    padding: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
     color: #fff;
     background-color: #219EBC;
     
@@ -82,5 +82,34 @@
 .boton:hover {
     background-size: cover;
     background-attachment: fixed;
-     transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+    .btn{
+        background-color: #FB8500;
+        color: #000;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .header h2 {
+    font-size: 40px;
+    width: 100vw;
+    padding-left: 20px;
+  }
+  .header h3 {
+    font-size: 34px;
+    width: 100vw;
+    padding-left: 20px;
+  }
+  .header p {
+    font-size: 14px;
+    width: 100vw;
+    padding-left: 20px;
+  }
+  .btn {
+    margin-left: 20px;
+  }
+  .boton{
+    margin-top: 60px;
+  }
 }
