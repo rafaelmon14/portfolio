@@ -1,0 +1,86 @@
+@keyframes aparecer {
+    0% {
+        opacity: 0; /* Invisible */
+        transform: translateY(20px); /* Desplazado hacia abajo */
+      }
+      100% {
+        opacity: 1; /* Visible */
+        transform: translateY(0); /* En posición */
+    }
+}
+
+@keyframes aparecerLeft {
+    0% {
+        opacity: 0; /* Invisible */
+        transform: translateX(-10px); /* Desplazado hacia abajo */
+      }
+      100% {
+        opacity: 1; /* Visible */
+        transform: translateX(0); /* En posición */
+    }
+}
+
+.header {
+    padding-top: 10%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header h2 {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+}
+
+.header h3 {
+    font-size: 64px;
+    font-weight: 500;
+    color: #FB8500;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.header p {
+    padding-top: 20px;
+    width: 800px;
+    opacity: 0;
+    animation: aparecerLeft 1s ease forwards;
+    animation-delay: 0.4s;
+    font-size: 20px;
+    
+}
+
+.btn {
+    text-align: center;
+    
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 90px;
+    /* border: solid 1px; */
+    padding: 12px;
+    color: #fff;
+    background-color: #219EBC;
+    
+}
+
+
+.boton{
+    margin-top: 94px;
+    position: absolute;
+    transition: transform 0.5s;
+    
+}
+
+.boton:hover {
+    background-size: cover;
+    background-attachment: fixed;
+     transform: translate(4px, -4px);
+}
