@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby"
 export default function Layout({children}) {
   const location = useLocation();
   const currentPath = location.pathname.replace(/\/$/, ""); 
-  const hideFigureOnPages = ["/projects", "/about", "/asd"] 
+  const hideFigureOnPages = ["portfolio/projects", "portfolio/about", "portfolio/projects"] 
   return (
     <div className='layout'>
         <Navbar/>
