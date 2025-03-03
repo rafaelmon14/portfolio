@@ -55,12 +55,27 @@
   }
   
   .tech-badge {
-    background: #023047;
-    color: #fff;
+    
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.9rem;
     font-family: 'Roboto';
     font-weight: 600;
   }
-  
+
+  /* .tech-badge:nth-child(even) {
+    background: #219EBC;
+    color: #000;
+  } */
+  .tech-badge:nth-child(3n + 1) { 
+    background: #023047;
+    color: #fff; 
+  }
+  .tech-badge:nth-child(3n + 2) { 
+    background: #219EBC;
+    color: #fff; 
+  }
+  .tech-badge:nth-child(3n + 3) { 
+    background: #FB8500;
+    color: #fff; 
+  }

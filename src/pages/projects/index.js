@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/projectList.css'
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, withPrefix } from 'gatsby'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
 
@@ -27,6 +27,7 @@ export const query = graphql`
 
 const ProjectCard = ({ project }) => {
   const image = getImage(project.frontmatter.thumb);
+  
   return (
     <div className="project-card">
       <GatsbyImage image={image} alt={project.frontmatter.title} className="project-image" />
