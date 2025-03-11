@@ -2,7 +2,7 @@
 title: Social Links Profile
 stack: HTML, CSS
 slug: https://rafaelmon14.github.io/social-links-profile/
-description: Página de recetas enfocada en la semántica HTML, reto y diseño de Frontend Mentor.
+description: Componente de perfil personalizable diseñado como un reto de Frontend Mentor enfocado en compartir enlaces de redes sociales
 thumb: ../images/thumbs/social-links.png
 ---
 
