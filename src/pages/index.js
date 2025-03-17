@@ -5,11 +5,12 @@ import * as styles from "../styles/home.module.css"
 import { graphql, Link } from "gatsby"
 
 export default function Home({data}) {
-  const image = getImage(data.file.childImageSharp)
-  console.log("eta vaina e seria: ", image);
+  // const image = getImage(data.file.childImageSharp)
+  // const titulo = data.siteMetadata.title;
+  // console.log("eta vaina e seria: ", image);
   return (
     <Layout>
-      
+      <title>Rafael Montenegro - Portfolio Web</title>
       <section className={styles.header}>
         <div>
           <h2>Rafael Montenegro</h2>
@@ -28,13 +29,11 @@ export default function Home({data}) {
   )
 }
 
-export const query = graphql`
-query Banner {
-  file(relativePath: {eq: "P1000468.JPG"}) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
+export const site = graphql`
+query MyQuery {
+  site {
+    siteMetadata {
+      title
     }
   }
 }

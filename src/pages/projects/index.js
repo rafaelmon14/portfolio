@@ -30,6 +30,7 @@ const ProjectCard = ({ project }) => {
   
   return (
     <div className="project-card">
+      <title>Rafael Montenegro - Portfolio Web</title>
       <GatsbyImage image={image} alt={project.frontmatter.title} className="project-image" />
       <h2 className="project-title">{project.frontmatter.title}</h2>
       <p className="project-description">{project.frontmatter.description}</p>

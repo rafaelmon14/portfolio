@@ -9,6 +9,9 @@
  */
 module.exports = {
   pathPrefix: "/portfolio",
+  siteMetadata: {
+    title: 'Rafael Montenegro - Portfolio',
+  },
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-plugin-image`,
@@ -33,10 +36,5 @@ module.exports = {
     },
    },
   ],
-  siteMetadata: {
-    title: 'Web Portfolio',
-    description: 'web que muestra un portfolio',
-    copyright: 'esta web tiene copyright owo',
-    contact: 'rafaelmon14@gmail.com'
-  }
+  
 }
