@@ -10,6 +10,7 @@ export default function Home({data}) {
   // console.log("eta vaina e seria: ", image);
   return (
     <Layout>
+      <meta name="google-site-verification" content="yekFUIh4YbV_v1F97NIJ3ZbwgX5oFWfJDMfGLg2ZRMo" />
       <title>Rafael Montenegro - Portfolio Web</title>
       <section className={styles.header}>
         <div>
